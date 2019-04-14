@@ -1,0 +1,36 @@
+Stella Yu
+ADJ assignment 6
+-------------------
+
+Identifier for the table containing all inmates at the Boone County Jail:
+
+
+<tbody class = "stripe" id="mrc_main_table">
+------------------------------------------------------
+Identifier for the table with all passed legislation from the Missouri Legislature:
+
+
+<table id="Table1" style="HEIGHT: 232px" cellspacing="1" cellpadding="1" width="100%" border="0">
+------------------------------------------------------
+Identifier for the table with all minutes from the Columbia City Council:
+
+
+For the table with everything in it, the identifier is:
+<table width="100%" border="1" cellspacing="0" cellpadding="4" style="clear:both;">
+However, if we only need minutes, I guess we'll instead identify each cell with downloadable minutes, and each cell is identified by the following HTML code:
+<td style = "text-align:center;">
+<a href="../../CMS/granicus/downloadfile.php?type=minutes&amp;id=1770">Minutes</a>
+The id in the above code varies from minutes to minutes.
+------------------------------------------------------
+Identifier for all mugshots of a detainee at the Boone County Jail:
+
+
+<img alt="Mugshot of ACTON, ANTHONY SEAN" src="SH01_MP.I00620s?CNTYP=97824" title="ACTON, ANTHONY SEAN">
+------------------------------------------------------
+Modifying request for Boone County Reps in 2005:
+
+
+The network tab tells us that this is a GET request, and the url is as follows:
+"https://house.mo.gov/MemberGridCluster.aspx?category=county&county=Boone&year=2019&code=R"
+In order to get data from 2005, we can simply change the year to 2005 and modify the request url to:
+"https://house.mo.gov/MemberGridCluster.aspx?category=county&county=Boone&year=2005&code=R"
